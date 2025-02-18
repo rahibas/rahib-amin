@@ -5,7 +5,7 @@
 ---
 
 <!-- Background Image for the About Section -->
-<div style="background-image: url('https://images.unsplash.com/photo-1564866657-4d95b7c9e7e1'); background-size: cover; background-position: center; color: white; padding: 60px;">
+<div style="background-image: url('marissa-grootes-vdaJJbls3xE-unsplash.jpg'); background-size: cover; background-position: center; color: white; padding: 60px;">
     <h1 style="font-family: 'Arial', sans-serif; font-size: 3rem;">Welcome to My Portfolio</h1>
     <p style="font-size: 1.2rem; max-width: 800px; text-align: center;">With a focus on innovative cloud solutions and strategic technology platforms, I specialize in delivering products that drive business growth. Below, you can find details about my background, experience, and the services I offer.</p>
 </div>
