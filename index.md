@@ -23,16 +23,31 @@ layout: home
 
 <div class="expertise-areas">
   <div class="expertise-card">
-    <h3>🚀 Product Strategy</h3>
+    <div class="card-glow"></div>
+    <div class="icon">🚀</div>
+    <h3>Product Strategy</h3>
     <p>Driving innovation through user-centered product development and strategic roadmap planning</p>
+    <div class="card-footer">
+      <span class="learn-more">Learn More →</span>
+    </div>
   </div>
   <div class="expertise-card">
-    <h3>☁️ Cloud Architecture</h3>
+    <div class="card-glow"></div>
+    <div class="icon">☁️</div>
+    <h3>Cloud Architecture</h3>
     <p>Designing scalable, secure cloud solutions that power modern enterprises</p>
+    <div class="card-footer">
+      <span class="learn-more">Learn More →</span>
+    </div>
   </div>
   <div class="expertise-card">
-    <h3>🔄 Platform Strategy</h3>
+    <div class="card-glow"></div>
+    <div class="icon">🔄</div>
+    <h3>Platform Strategy</h3>
     <p>Enabling digital transformation through comprehensive platform strategies</p>
+    <div class="card-footer">
+      <span class="learn-more">Learn More →</span>
+    </div>
   </div>
 </div>
 
@@ -56,6 +71,10 @@ layout: home
   --gradient-1: #0ea5e9;
   --gradient-2: #6366f1;
   --gradient-3: #a855f7;
+
+  /* New CSS Variables */
+  --card-bg-rgb: 33, 38, 45;
+  --gradient-1-rgb: 14, 165, 233;
 }
 
 body {
@@ -206,60 +225,107 @@ body {
 
 .expertise-areas {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin: 3rem auto;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin: 4rem auto;
   max-width: 1200px;
   padding: 0 2rem;
+  perspective: 1000px;
 }
 
 .expertise-card {
-  padding: 2rem;
-  border-radius: 12px;
-  background: var(--card-bg);
-  color: var(--text-primary);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  border: 1px solid var(--border-color);
   position: relative;
+  padding: 2.5rem;
+  border-radius: 16px;
+  background: linear-gradient(145deg, 
+    rgba(var(--card-bg-rgb), 0.9),
+    rgba(var(--card-bg-rgb), 0.4));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
 }
 
-.expertise-card::after {
-  content: '';
+.card-glow {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  height: 100%;
+  background: linear-gradient(45deg, 
+    var(--gradient-1), 
+    var(--gradient-2), 
+    var(--gradient-3));
   opacity: 0;
   transition: opacity 0.3s ease;
+  filter: blur(20px);
+  z-index: 0;
 }
 
 .expertise-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--accent-primary);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px) rotateX(2deg);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(var(--gradient-1-rgb), 0.1);
 }
 
-.expertise-card:hover::after {
-  opacity: 1;
+.expertise-card:hover .card-glow {
+  opacity: 0.1;
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 0 10px rgba(var(--gradient-1-rgb), 0.3));
 }
 
 .expertise-card h3 {
-  font-family: var(--font-main);
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: var(--accent-primary);
+  font-size: 1.8rem;
+  font-weight: 700;
   margin-bottom: 1rem;
+  background: linear-gradient(120deg, 
+    var(--gradient-1), 
+    var(--gradient-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 1;
 }
 
 .expertise-card p {
   color: var(--text-secondary);
   font-size: 1.1rem;
-  line-height: 1.6;
-  margin: 0;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.card-footer {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
+  margin-top: auto;
+}
+
+.learn-more {
+  font-size: 0.9rem;
+  color: var(--gradient-1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.learn-more:hover {
+  color: var(--gradient-2);
+  transform: translateX(5px);
 }
 
 @keyframes rotate {
