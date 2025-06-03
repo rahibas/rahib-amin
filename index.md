@@ -328,47 +328,6 @@ body {
   transform: translateX(5px);
 }
 
-/* Site Header Styles */
-.site-header {
-  background: var(--card-bg);
-  border-bottom: 1px solid var(--border-color);
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  backdrop-filter: blur(10px);
-}
-
-.site-title {
-  font-family: var(--font-main);
-  font-size: 1.4rem;
-  font-weight: 600;
-  text-decoration: none;
-  color: var(--text-bright) !important;
-  background: linear-gradient(120deg, var(--gradient-1), var(--gradient-2));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease;
-  display: inline-block;
-  padding: 0.5rem 0;
-}
-
-.site-title:hover {
-  transform: translateY(-1px);
-  text-shadow: 0 0 15px rgba(var(--gradient-1-rgb), 0.3);
-}
-
-/* Add subtitle after site title */
-.site-title::after {
-  content: "Product & Technology Leader";
-  display: block;
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: var(--text-secondary);
-  opacity: 0.8;
-  margin-top: 0.2rem;
-}
-
 @keyframes rotate {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
