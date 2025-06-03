@@ -24,13 +24,19 @@ layout: home
 </div>
 
 <style>
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
 .hero {
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2c3e50 100%);
-  color: white;
+  background: linear-gradient(135deg, #1e1e1e 0%, #2c3e50 100%);
+  color: #ffffff;
   border-radius: 8px;
   margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .profile-image {
@@ -39,6 +45,7 @@ layout: home
   border-radius: 50%;
   border: 4px solid #3498db;
   margin-bottom: 1rem;
+  box-shadow: 0 0 20px rgba(52, 152, 219, 0.3);
 }
 
 .expertise-areas {
@@ -51,13 +58,22 @@ layout: home
 .expertise-card {
   padding: 1.5rem;
   border-radius: 8px;
-  background:rgb(50, 64, 77);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+  background: #1e1e1e;
+  color: #e0e0e0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #333;
 }
 
 .expertise-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(52, 152, 219, 0.2);
+  border-color: #3498db;
+}
+
+.expertise-card h3 {
+  color: #3498db;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {

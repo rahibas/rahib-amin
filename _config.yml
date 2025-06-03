@@ -15,5 +15,10 @@ header_pages:
   - contact.md
 minima:
   skin: dark
+  social_links:
+    github: rahibamin
+    linkedin: rahib-amin
+    twitter: rahibamin
+  date_format: "%b %-d, %Y"
 
 
