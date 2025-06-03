@@ -21,32 +21,54 @@ layout: home
   </div>
 </div>
 
+<div class="about-section">
+  <div class="about-container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <p class="about-intro">
+        As a Lead Consultant at Thoughtworks America's EMPC Service Line, I bring over a decade of experience in large-scale distributed systems and technical product management.
+      </p>
+      <div class="about-details">
+        <p>I position myself at the intersection of Product Management, Architecture, and Platform Strategy, specializing in:</p>
+        <ul>
+          <li>Translating complex technical visions into actionable product roadmaps</li>
+          <li>Building scalable platform solutions within API and event-driven ecosystems</li>
+          <li>Implementing AI-driven platform solutions</li>
+          <li>Facilitating cross-functional collaboration using Design Thinking approaches</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="expertise-areas">
   <div class="expertise-card">
     <div class="card-glow"></div>
     <div class="icon">🚀</div>
-    <h3>Product Strategy</h3>
-    <p>Driving innovation through user-centered product development and strategic roadmap planning</p>
+    <h3>Product & Platform Strategy</h3>
+    <p>Transforming technical visions into scalable platform architectures and actionable roadmaps. Specializing in "X as a Product" mindset and developer experience optimization.</p>
     <div class="card-footer">
-      <span class="learn-more">Learn More →</span>
+      <span class="learn-more">Explore Strategy →</span>
     </div>
   </div>
+  
   <div class="expertise-card">
     <div class="card-glow"></div>
     <div class="icon">☁️</div>
-    <h3>Cloud Architecture</h3>
-    <p>Designing scalable, secure cloud solutions that power modern enterprises</p>
+    <h3>Architecture & Systems</h3>
+    <p>Designing robust distributed systems with expertise in microservices, event-driven architecture, and polyglot persistence ecosystems.</p>
     <div class="card-footer">
-      <span class="learn-more">Learn More →</span>
+      <span class="learn-more">View Architectures →</span>
     </div>
   </div>
+  
   <div class="expertise-card">
     <div class="card-glow"></div>
     <div class="icon">🔄</div>
-    <h3>Platform Strategy</h3>
-    <p>Enabling digital transformation through comprehensive platform strategies</p>
+    <h3>Technology Leadership</h3>
+    <p>Driving DevSecOps practices, fostering cross-functional collaboration, and aligning technical initiatives with business objectives.</p>
     <div class="card-footer">
-      <span class="learn-more">Learn More →</span>
+      <span class="learn-more">Learn About Leadership →</span>
     </div>
   </div>
 </div>
@@ -223,6 +245,72 @@ body {
   transform: translateY(-2px);
 }
 
+.about-section {
+  margin: 4rem auto;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+.about-container {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 3rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  background: linear-gradient(120deg, var(--gradient-1), var(--gradient-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.about-content {
+  position: relative;
+  z-index: 1;
+}
+
+.about-intro {
+  font-size: 1.2rem;
+  color: var(--text-bright);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.about-details {
+  color: var(--text-secondary);
+}
+
+.about-details p {
+  margin-bottom: 1rem;
+}
+
+.about-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.about-details li {
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.about-details li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--gradient-1);
+}
+
 .expertise-areas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -351,6 +439,18 @@ body {
   .expertise-areas {
     grid-template-columns: 1fr;
     padding: 0 1rem;
+  }
+  
+  .about-container {
+    padding: 2rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .about-intro {
+    font-size: 1.1rem;
   }
 }
 </style>
