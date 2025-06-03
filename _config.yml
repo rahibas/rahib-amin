@@ -1,7 +1,19 @@
-
 theme: minima
-title: Rahib's Proffesional Vanity Page
-author: Rahib Amin
-description: This is a place where people can learn a bit about my proffessional expereince and context.
+title: Rahib Amin | Product & Technology Leader
+author:
+  name: Rahib Amin
+  email: your.email@example.com
+description: Technical Product Manager & Cloud Architect specializing in platform strategy and digital transformation
+social_links:
+  github: rahibamin
+  linkedin: rahib-amin
+  twitter: rahibamin
+show_excerpts: true
+header_pages:
+  - about.md
+  - blog.md
+  - contact.md
+minima:
+  skin: dark
 
 

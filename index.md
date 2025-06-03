@@ -1,78 +1,68 @@
-# Rahib S. Amin
-**Technical Product Manager** | **Cloud Architect** | **Platform Strategist**
+---
+layout: home
+---
 
----
-![Me](1702584574588.jpeg)
----
-<!-- Background Image for the About Section -->
-<div style="background-image: url('marissa-grootes-vdaJJbls3xE-unsplash.jpg'); background-size: cover; background-position: center; color: white; padding: 60px;">
-    <h1 style="font-family: 'Arial', sans-serif; font-color: 'grey'; font-size: 3rem;">Welcome to My Portfolio</h1>
-    <p style="font-size: 1.2rem; max-width: 800px; text-align: center;">With a focus on innovative cloud solutions and strategic technology platforms, I specialize in delivering products that drive business growth. Below, you can find details about my background, experience, and the services I offer.</p>
+<div class="hero">
+  <img src="1702584574588.jpeg" alt="Rahib Amin" class="profile-image">
+  <h1>Rahib Amin</h1>
+  <h2>Technical Product Manager & Cloud Architect</h2>
 </div>
 
----
-
-## 🌟 About Me
-I am a passionate **Technical Product Manager**, **Cloud Architect**, and **Platform Strategist** with years of experience in designing, managing, and executing complex technology projects. My focus is on cloud platforms, architecture, and aligning technology solutions with business objectives.
-
-### What I do:
-- Lead the development and strategy of cloud-based platforms.
-- Ensure the design and implementation of scalable and secure architectures.
-- Guide organizations through digital transformation with tailored platform strategies.
-
----
-
-## 💼 Experience
-### **Technical Product Manager**
-- Led product strategy for cloud-based platforms, ensuring alignment with business goals and customer needs.
-- Drove product lifecycle from concept to implementation, delivering high-quality products.
-
-### **Cloud Architect**
-- Designed and implemented scalable, secure, and cost-effective cloud architectures for enterprise solutions.
-- Collaborated with cross-functional teams to build seamless cloud infrastructure.
-
-### **Platform Strategist**
-- Developed comprehensive platform strategies for digital transformation.
-- Empowered technology teams with the tools and strategies to drive innovation.
-
----
-
-<!-- Background Image for Services Section -->
-<div style="background-color: #f4f4f4; color: #333; padding: 60px;">
-    <h2 style="font-family: 'Arial', sans-serif; color: #2980B9; font-size: 2.5rem; text-align: center;">🚀 Services</h2>
-    <p style="text-align: center; font-size: 1.2rem; max-width: 800px; margin: 0 auto;">I offer a range of services that are tailored to meet the evolving needs of technology-driven businesses.</p>
+<div class="expertise-areas">
+  <div class="expertise-card">
+    <h3>🚀 Product Strategy</h3>
+    <p>Driving innovation through user-centered product development and strategic roadmap planning</p>
+  </div>
+  <div class="expertise-card">
+    <h3>☁️ Cloud Architecture</h3>
+    <p>Designing scalable, secure cloud solutions that power modern enterprises</p>
+  </div>
+  <div class="expertise-card">
+    <h3>🔄 Platform Strategy</h3>
+    <p>Enabling digital transformation through comprehensive platform strategies</p>
+  </div>
 </div>
 
-### **Cloud Solution Design**
-Create custom cloud solutions that are scalable, secure, and cost-efficient for your business needs.
+<style>
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2c3e50 100%);
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
 
-### **Platform Strategy**
-Help organizations define and implement strategies for cloud platform adoption, fostering business agility.
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid #3498db;
+  margin-bottom: 1rem;
+}
 
-### **Product Management Consulting**
-Consult on best practices for managing the full product lifecycle, from ideation through development and launch.
+.expertise-areas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
 
----
+.expertise-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
 
-## 📞 Contact Me
-If you're interested in collaborating or discussing potential opportunities, feel free to reach out!
+.expertise-card:hover {
+  transform: translateY(-5px);
+}
 
-- **Email**: [your.email@example.com](mailto:your.email@example.com)
-- **Phone**: +1 (555) 123-4567 (optional, if relevant)
-
----
-
-## 🌐 Connect with Me
-- [**LinkedIn**](https://www.linkedin.com/in/yourprofile)
-- [**GitHub**](https://github.com/yourprofile)
-
----
-
-<!-- Footer with background image -->
-<div style="background-image: url('https://images.unsplash.com/photo-1521747116042-5a4e221f6d6c'); background-size: cover; background-position: center; color: white; padding: 40px;">
-    <p style="text-align: center; font-size: 1rem;">© 2025 **Your Name**. All rights reserved.</p>
-    <p style="text-align: center;">
-        <a href="https://www.linkedin.com/in/yourprofile" style="color: #1ABC9C; text-decoration: none;">LinkedIn</a> | 
-        <a href="https://github.com/yourprofile" style="color: #1ABC9C; text-decoration: none;">GitHub</a>
-    </p>
-</div>
+@media (max-width: 768px) {
+  .expertise-areas {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
