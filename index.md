@@ -51,7 +51,7 @@ layout: home
 .expertise-card {
   padding: 1.5rem;
   border-radius: 8px;
-  background: #f8f9fa;
+  background:rgb(50, 64, 77);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
 }
