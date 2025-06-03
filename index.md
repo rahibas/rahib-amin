@@ -32,8 +32,8 @@ layout: home
   --accent-primary: #58a6ff;
   --accent-secondary: #bc8cff;
   --text-bright: #ffffff;
-  --text-primary: #c9d1d9;
-  --text-secondary: #8b949e;
+  --text-primary:rgb(218, 226, 233);
+  --text-secondary:rgb(217, 222, 228);
   --border-color: #30363d;
   
   /* Unified Typography */
