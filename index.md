@@ -3,9 +3,22 @@ layout: home
 ---
 
 <div class="hero">
-  <img src="1702584574588.jpeg" alt="Rahib Amin" class="profile-image">
-  <h1>Rahib Amin</h1>
-  <h2>Technical Product Manager & Cloud Architect</h2>
+  <div class="hero-background">
+    <div class="geometric-shapes"></div>
+  </div>
+  <div class="hero-content">
+    <div class="profile-container">
+      <img src="1702584574588.jpeg" alt="Rahib Amin" class="profile-image">
+      <div class="profile-glow"></div>
+    </div>
+    <h1>Rahib Amin</h1>
+    <h2>Technical Product Manager & Cloud Architect</h2>
+    <div class="social-links">
+      <a href="https://github.com/rahibamin" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/rahib-amin" target="_blank">LinkedIn</a>
+      <a href="https://twitter.com/rahibamin" target="_blank">Twitter</a>
+    </div>
+  </div>
 </div>
 
 <div class="expertise-areas">
@@ -32,12 +45,17 @@ layout: home
   --accent-primary: #58a6ff;
   --accent-secondary: #bc8cff;
   --text-bright: #ffffff;
-  --text-primary:rgb(218, 226, 233);
-  --text-secondary:rgb(217, 222, 228);
+  --text-primary: #c9d1d9;
+  --text-secondary:rgb(223, 225, 228);
   --border-color: #30363d;
   
   /* Unified Typography */
   --font-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+
+  /* Gradient Colors */
+  --gradient-1: #0ea5e9;
+  --gradient-2: #6366f1;
+  --gradient-3: #a855f7;
 }
 
 body {
@@ -60,52 +78,130 @@ body {
 }
 
 .hero {
+  position: relative;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
   background: var(--card-bg);
   color: var(--text-bright);
-  border-radius: 12px;
+  border-radius: 16px;
   margin: 2rem auto;
   max-width: 1200px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   border: 1px solid var(--border-color);
 }
 
-.hero h1 {
-  font-family: var(--font-main);
-  font-size: 3.5rem;
-  font-weight: 600;
-  margin: 1rem 0;
-  color: var(--text-bright);
-  letter-spacing: -0.03em;
-  background: linear-gradient(120deg, var(--accent-primary), var(--accent-secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 2px 10px rgba(88, 166, 255, 0.2);
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  opacity: 0.1;
 }
 
-.hero h2 {
-  font-family: var(--font-main);
-  font-size: 1.5rem;
-  color: var(--text-primary);
-  font-weight: 400;
-  margin-top: 0.5rem;
+.geometric-shapes {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  background: 
+    radial-gradient(circle at 20% 20%, var(--gradient-1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, var(--gradient-2) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, var(--gradient-3) 0%, transparent 50%);
+  animation: rotate 30s linear infinite;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.profile-container {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto 2rem;
 }
 
 .profile-image {
+  position: relative;
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 3px solid var(--accent-primary);
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  transition: all 0.5s ease;
+}
+
+.profile-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 180px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle at center, 
+    var(--gradient-1) 0%, 
+    transparent 70%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.profile-container:hover .profile-glow {
+  opacity: 0.15;
+}
+
+.profile-container:hover .profile-image {
+  transform: scale(1.05);
+  border-color: var(--gradient-1);
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  background: linear-gradient(120deg, 
+    var(--gradient-1), 
+    var(--gradient-2), 
+    var(--gradient-3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 8s ease infinite;
+  background-size: 200% auto;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  opacity: 0.9;
   margin-bottom: 2rem;
-  box-shadow: 0 0 30px rgba(88, 166, 255, 0.2);
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.social-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
   transition: all 0.3s ease;
 }
 
-.profile-image:hover {
-  transform: scale(1.03);
-  border-color: var(--accent-secondary);
-  box-shadow: 0 0 40px rgba(88, 166, 255, 0.3);
+.social-links a:hover {
+  color: var(--text-bright);
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 
 .expertise-areas {
@@ -164,6 +260,17 @@ body {
   font-size: 1.1rem;
   line-height: 1.6;
   margin: 0;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 @media (max-width: 768px) {
