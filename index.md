@@ -14,9 +14,8 @@ layout: home
     <h1>Rahib Amin</h1>
     <h2>Technical Product Manager & Cloud Architect</h2>
     <div class="social-links">
-      <a href="https://github.com/rahibamin" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/rahib-amin" target="_blank">LinkedIn</a>
-      <a href="https://twitter.com/rahibamin" target="_blank">Twitter</a>
+      <a href="https://github.com/rahibas" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/rahib-amin-2aa402149/" target="_blank">LinkedIn</a>
     </div>
   </div>
 </div>
@@ -70,6 +69,47 @@ layout: home
     <div class="card-footer">
       <span class="learn-more">Learn About Leadership →</span>
     </div>
+  </div>
+</div>
+
+<div class="blogs-section">
+  <div class="blogs-container">
+    <h2 class="section-title">My Blogs</h2>
+    <ul class="blogs-list">
+      <li>
+        <a href="https://medium.com/@amin.rahib/finding-the-sweet-spot-why-strategic-balance-is-crucial-for-platform-roadmaps-d8043bb3ae6d" target="_blank">
+          Finding the Sweet Spot: Why Strategic Balance is Crucial for Platform Roadmaps
+        </a>
+      </li>
+      <li>
+        <a href="https://www.thoughtworks.com/en-us/insights/blog/apis/design-thinking-apis" target="_blank">
+          Design Thinking for APIs
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=KvaufrhtTF4&list=PLDvibOTp3V8-ShFDF7KYepg0YVw2aQfeT&index=22" target="_blank">
+          Video: Exploring Platform Strategies
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="speaking-section">
+  <div class="speaking-container">
+    <h2 class="section-title">Upcoming Speaking Engagements</h2>
+    <ul class="speaking-list">
+      <li>
+        <strong>Event Name:</strong> Example Conference<br>
+        <strong>Date:</strong> January 15, 2024<br>
+        <strong>Topic:</strong> The Future of Cloud Architectures
+      </li>
+      <li>
+        <strong>Event Name:</strong> Tech Leadership Summit<br>
+        <strong>Date:</strong> February 20, 2024<br>
+        <strong>Topic:</strong> Driving Innovation with AI
+      </li>
+    </ul>
   </div>
 </div>
 
@@ -414,6 +454,41 @@ body {
 .learn-more:hover {
   color: var(--gradient-2);
   transform: translateX(5px);
+}
+
+.blogs-section, .speaking-section {
+  margin: 4rem auto;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+.blogs-container, .speaking-container {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 3rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.blogs-list, .speaking-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blogs-list li, .speaking-list li {
+  margin-bottom: 1.5rem;
+}
+
+.blogs-list a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.blogs-list a:hover {
+  color: var(--accent-secondary);
 }
 
 @keyframes rotate {
