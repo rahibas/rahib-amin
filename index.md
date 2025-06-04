@@ -11,8 +11,8 @@ layout: home
       <img src="1702584574588.jpeg" alt="Rahib Amin" class="profile-image">
       <div class="profile-glow"></div>
     </div>
-    <h1>Rahib Amin</h1>
-    <h2>Technical Product Manager & Cloud Architect</h2>
+    <h1 style="color: #f5f5f5;">Rahib Amin</h1>
+    <h2 style="color: #f5f5f5;">Technical Product Manager / Platform Strategist / Product Architect</h2>
     <div class="social-links">
       <a href="https://github.com/rahibas" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/rahib-amin-2aa402149/" target="_blank">LinkedIn</a>
@@ -85,7 +85,7 @@ layout: home
     <h3>AI & Machine Learning Solutions</h3>
     <p>Designing and implementing AI-driven solutions to enhance decision-making, automate processes, and deliver personalized user experiences.</p>
     <div class="card-footer">
-      <a href="https://www.thoughtworks.com/en-us/insights/topic/ai-and-machine-learning" target="_blank" class="learn-more">Discover AI Solutions →</a>
+      <a href="https://www.thoughtworks.com/en-us/what-we-do/ai-first-software-engineering-transformation" target="_blank" class="learn-more">Discover AI Solutions →</a>
     </div>
   </div>
 </div>
