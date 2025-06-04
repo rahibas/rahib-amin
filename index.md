@@ -2,17 +2,6 @@
 layout: home
 ---
 
-<header style="
-  background: var(--card-bg); 
-  padding: 1.5rem 2rem; 
-  text-align: center; 
-  border-bottom: 1px solid var(--border-color);">
-  <h1 style="color: var(--text-bright); font-size: 2rem; margin: 0;">Rahib Amin</h1>
-  <p style="color: var(--text-secondary); font-size: 1rem; margin: 0.5rem 0;">
-    Technical Product Manager | Platform Strategist | Product Architect
-  </p>
-</header>
-
 <div class="hero">
   <div class="hero-background">
     <div class="geometric-shapes"></div>
@@ -136,48 +125,20 @@ layout: home
 <div class="speaking-section">
   <div class="speaking-container">
     <h2 class="section-title">Upcoming Speaking Engagements</h2>
-    <table style="
-      width: 100%; 
-      border-collapse: collapse; 
-      margin-top: 1.5rem; 
-      color: var(--text-primary);">
-      <thead>
-        <tr style="background: var(--card-bg);">
-          <th style="padding: 1rem; border: 1px solid var(--border-color); text-align: left;">Event Name</th>
-          <th style="padding: 1rem; border: 1px solid var(--border-color); text-align: left;">Date</th>
-          <th style="padding: 1rem; border: 1px solid var(--border-color); text-align: left;">Topic</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="padding: 1rem; border: 1px solid var(--border-color);">Example Conference</td>
-          <td style="padding: 1rem; border: 1px solid var(--border-color);">January 15, 2024</td>
-          <td style="padding: 1rem; border: 1px solid var(--border-color);">The Future of Cloud Architectures</td>
-        </tr>
-        <tr>
-          <td style="padding: 1rem; border: 1px solid var(--border-color);">Tech Leadership Summit</td>
-          <td style="padding: 1rem; border: 1px solid var(--border-color);">February 20, 2024</td>
-          <td style="padding: 1rem; border: 1px solid var(--border-color);">Driving Innovation with AI</td>
-        </tr>
-      </tbody>
-    </table>
+    <ul class="speaking-list">
+      <li>
+        <strong>Event Name:</strong> Example Conference<br>
+        <strong>Date:</strong> January 15, 2024<br>
+        <strong>Topic:</strong> The Future of Cloud Architectures
+      </li>
+      <li>
+        <strong>Event Name:</strong> Tech Leadership Summit<br>
+        <strong>Date:</strong> February 20, 2024<br>
+        <strong>Topic:</strong> Driving Innovation with AI
+      </li>
+    </ul>
   </div>
 </div>
-
-<footer style="
-  background: var(--card-bg); 
-  padding: 2rem; 
-  text-align: center; 
-  border-top: 1px solid var(--border-color);">
-  <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0;">
-    © 2024 Rahib Amin. All rights reserved.
-  </p>
-  <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0.5rem 0;">
-    Connect with me on 
-    <a href="https://github.com/rahibas" target="_blank" style="color: var(--accent-primary); text-decoration: none;">GitHub</a> | 
-    <a href="https://www.linkedin.com/in/rahib-amin-2aa402149/" target="_blank" style="color: var(--accent-primary); text-decoration: none;">LinkedIn</a>
-  </p>
-</footer>
 
 <style>
 :root {
