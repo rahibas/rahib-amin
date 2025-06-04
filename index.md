@@ -68,12 +68,24 @@ layout: home
   <div class="expertise-card">
     <div class="card-glow"></div>
     <div class="icon">
-      <img src="https://img.icons8.com/fluency/48/leadership.png" alt="Leadership Icon">
+      <img src="https://img.icons8.com/fluency/48/management.png" alt="Leadership Icon">
     </div>
     <h3>Technology Leadership</h3>
     <p>Driving DevSecOps practices, fostering cross-functional collaboration, and aligning technical initiatives with business objectives.</p>
     <div class="card-footer">
       <a href="https://www.thoughtworks.com/en-us/about-us/events/webinars/beyond-the-data--data-leadership-for-transformative-impact-in-20" target="_blank" class="learn-more">Learn About Leadership →</a>
+    </div>
+  </div>
+
+  <div class="expertise-card">
+    <div class="card-glow"></div>
+    <div class="icon">
+      <img src="https://img.icons8.com/fluency/48/artificial-intelligence.png" alt="AI Icon">
+    </div>
+    <h3>AI & Machine Learning Solutions</h3>
+    <p>Designing and implementing AI-driven solutions to enhance decision-making, automate processes, and deliver personalized user experiences.</p>
+    <div class="card-footer">
+      <a href="https://www.thoughtworks.com/en-us/insights/topic/ai-and-machine-learning" target="_blank" class="learn-more">Discover AI Solutions →</a>
     </div>
   </div>
 </div>
