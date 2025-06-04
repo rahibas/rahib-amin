@@ -43,31 +43,37 @@ layout: home
 <div class="expertise-areas">
   <div class="expertise-card">
     <div class="card-glow"></div>
-    <div class="icon">🚀</div>
-    <h3>Product & Platform Strategy</h3>
+    <div class="icon">
+      <img src="https://img.icons8.com/fluency/48/rocket.png" alt="Rocket Icon">
+    </div>
+    <h3>Enterprise Platform Modernization</h3>
     <p>Transforming technical visions into scalable platform architectures and actionable roadmaps. Specializing in "X as a Product" mindset and developer experience optimization.</p>
     <div class="card-footer">
-      <span class="learn-more">Explore Strategy →</span>
+      <a href="https://www.thoughtworks.com/en-us/what-we-do/enterprise-platform-modernization" target="_blank" class="learn-more">Explore Strategy →</a>
     </div>
   </div>
   
   <div class="expertise-card">
     <div class="card-glow"></div>
-    <div class="icon">☁️</div>
+    <div class="icon">
+      <img src="https://img.icons8.com/fluency/48/cloud.png" alt="Cloud Icon">
+    </div>
     <h3>Architecture & Systems</h3>
     <p>Designing robust distributed systems with expertise in microservices, event-driven architecture, and polyglot persistence ecosystems.</p>
     <div class="card-footer">
-      <span class="learn-more">View Architectures →</span>
+      <a href="https://www.thoughtworks.com/en-us/insights/topic/architecture" target="_blank" class="learn-more">View Architectures →</a>
     </div>
   </div>
   
   <div class="expertise-card">
     <div class="card-glow"></div>
-    <div class="icon">🔄</div>
+    <div class="icon">
+      <img src="https://img.icons8.com/fluency/48/leadership.png" alt="Leadership Icon">
+    </div>
     <h3>Technology Leadership</h3>
     <p>Driving DevSecOps practices, fostering cross-functional collaboration, and aligning technical initiatives with business objectives.</p>
     <div class="card-footer">
-      <span class="learn-more">Learn About Leadership →</span>
+      <a href="https://www.thoughtworks.com/en-us/about-us/events/webinars/beyond-the-data--data-leadership-for-transformative-impact-in-20" target="_blank" class="learn-more">Learn About Leadership →</a>
     </div>
   </div>
 </div>
