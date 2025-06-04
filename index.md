@@ -12,7 +12,16 @@ layout: home
       <div class="profile-glow"></div>
     </div>
     <h1 style="color: #f5f5f5;">Rahib Amin</h1>
-    <h2 style="color: #f5f5f5;">Technical Product Manager / Platform Strategist / Product Architect</h2>
+    <h2 style="
+      color: #f5f5f5; 
+      font-size: 1.8rem; 
+      font-weight: 500; 
+      margin-top: 1rem; 
+      margin-bottom: 2rem; 
+      text-align: center; 
+      letter-spacing: 0.5px;">
+      Technical Product Manager / Platform Strategist / Product Architect
+    </h2>
     <div class="social-links">
       <a href="https://github.com/rahibas" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/rahib-amin-2aa402149/" target="_blank">LinkedIn</a>
