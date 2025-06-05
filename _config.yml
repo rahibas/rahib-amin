@@ -2,7 +2,7 @@ theme: minima
 title: Rahib Amin | Product & Technology Leader
 author:
   name: Rahib Amin
-  email: your.email@example.com
+  email: rahib.amin@thoughtworks.com
 description: Technical Product Manager & Cloud Architect specializing in platform strategy and digital transformation
 social_links:
   github: rahibamin
@@ -16,9 +16,9 @@ header_pages:
 minima:
   skin: dark
   social_links:
-    github: rahibamin
-    linkedin: rahib-amin
-    twitter: rahibamin
+    github: https://www.github.com/rahibas
+    linkedin: https://www.linkedin.com/in/rahib-amin-2aa402149/
+
   date_format: "%b %-d, %Y"
 
 
